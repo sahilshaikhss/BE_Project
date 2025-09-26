@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration</title>
+</head>
+<body>
+  <h2>Event Registration Form</h2>
+  <form action="http://127.0.0.1:5000/register" method="POST" enctype="multipart/form-data">
+    
+    <h3>Guardian Info</h3>
+    Name: <input type="text" name="guardian_name" required><br>
+    Phone: <input type="text" name="guardian_phone" required><br>
+    Address: <input type="text" name="address"><br>
+
+    <h3>Members Info</h3>
+    Names (comma separated): <input type="text" name="members"><br>
+
+    <h3>Photos</h3>
+    Individual Photos: <input type="file" name="individual_photos" multiple><br>
+    Group Photo: <input type="file" name="group_photo"><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
